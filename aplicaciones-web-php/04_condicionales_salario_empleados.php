@@ -48,7 +48,7 @@
       
       ?>
 
-            <form action="" method="post">
+            <form action="04_condicionales_salario_empleados.php" method="post">
                 <table>
                     <tr>
                         <td width="150">Empleado</td>

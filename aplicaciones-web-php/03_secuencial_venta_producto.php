@@ -13,7 +13,7 @@
    </header>
 
    <section>
-       <form action="" method="POST">
+       <form action="03_secuencial_venta_producto.php" method="POST">
            <table class="tableInfo">
                 <tr>
                     <td>Cantidad</td>
