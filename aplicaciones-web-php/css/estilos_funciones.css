@@ -19,8 +19,11 @@ img {
     text-transform: uppercase;
 }
 
-table {
+form table {
     margin: auto;
+    border-collapse: collapse;
+    border: 1px solid #000000;
+    
 }
 
 footer h6 {
@@ -42,3 +45,8 @@ footer h6 {
     color: rgb(0, 0, 255);
     font-size: 36px;
 }
+
+/* #tabla-numero {
+    border-collapse: collapse;
+    border: 1px solid #000000;
+} */
