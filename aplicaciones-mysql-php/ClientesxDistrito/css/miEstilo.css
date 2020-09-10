@@ -1,1 +1,24 @@
 /*Estilos CSS para Clientes por Distrito*/
+
+h2{
+    text-transform:uppercase;  
+    text-align: center;
+}
+
+footer h5{
+    text-align: center;    
+}
+
+.form-envio{
+    
+    margin: 10px auto;
+    width: 500px;
+}
+
+.btn-listar{
+    margin:0 auto;
+}
+
+
+
+
