@@ -10,11 +10,11 @@ $baseDatos = "ventas2015";
 $conexion = mysqli_connect($server, $user, $pass, $baseDatos);
 
 
-/* if($conexion){
+if($conexion){
     echo "Hay conexion";
 }else{
     echo "no hay conexion". mysqli_error($conexion);
-} */
+}
 
 
 

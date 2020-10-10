@@ -24,19 +24,20 @@
 
     <div class="container">
         <div class="form-envio">
-            
+
             <form class="form-inline" action="listadoClientesxDistrito.php" method="POST">
                 <div class="form-group mb-2">
-                    <input type="text" readonly class="form-control-plaintext text-center" id="staticEmail2" value="Seleccione Distro">
+                    <input type="text" readonly class="form-control-plaintext text-center" id="staticEmail2"
+                        value="Seleccione Distro">
                 </div>
-               
+
                 <div class="form-group mx-sm-3 mb-2">
                     <select id="inputState" class="form-control" name="selDistrito">
                         <?php 
 
-                            $sql = 'SELECT DISTINCT c.ID_DISTRO, d.DESCRIPCION
+                            $sql = 'SELECT DISTINCT c.id_distrito, d.descripcion
                             FROM cliente c INNER JOIN distro d 
-                            ON c.ID_DISTRO = d.ID_DISTRO';
+                            ON c.id_distrito = d.id_distro;';
 
                             $rs = mysqli_query($conexion, $sql);
 
@@ -46,11 +47,11 @@
                             while ($fila = mysqli_fetch_assoc($rs)) :
 
                         ?>
-                            
-                            <option value="<?= $fila['ID_DISTRO']?>"><?= $fila['DESCRIPCION'] ?></option>
-                        
-                            <?php endwhile; ?>
-                        
+
+                        <option value="<?= $fila['id_distrito']?>"><?= $fila['descripcion'] ?></option>
+
+                        <?php endwhile; ?>
+
                     </select>
                 </div>
 
@@ -59,22 +60,23 @@
 
         </div>
 
-               <?php 
+        <?php 
                
                 //Llamamos a la funcion
-                 $codigo = getDistrito();               
+                 $codigo = getDistrito();
+                              
                 //desarrollamos la consulta
                     $sqlConsulta  = "SELECT DESCRIPCION FROM DISTRO WHERE ID_DISTRO = '$codigo';";
                     $distro = mysqli_query($conexion, $sqlConsulta);
                     $filaDistro = mysqli_fetch_array($distro, MYSQLI_ASSOC);
 
                 //Implementamos la consulta
-                $sqlImplento = "SELECT C.ID_CLIENTE, CONCAT(C.NOMBRES,' ', C.PATERNO,' ', C.MATERNO) AS NOMBRES,
-                                C.FONO, D.DESCRIPCION
-                                FROM CLIENTE C 
-                                INNER JOIN DISTRO D
-                                ON C.ID_DISTRO = D.ID_DISTRO
-                                WHERE C.ID_DISTRO = '$codigo';";
+                $sqlImplento = "SELECT C.id_cliente, CONCAT(C.NOMBRES,' ', C.PATERNO,' ', C.MATERNO) AS nombres,
+                C.fono, D.descripcion
+                FROM CLIENTE C 
+                INNER JOIN DISTRO D
+                ON C.id_distrito = D.id_distro
+                WHERE C.id_distrito = '$codigo';";
 
                 //Realizando la consulta ala distro seleccionado
                 $rsC = mysqli_query($conexion, $sqlImplento);   
@@ -82,7 +84,7 @@
                 //Determinar el total de clientes 
                 $total = mysqli_num_rows($rsC);
                
-               ?>                     
+               ?>
 
 
         <div class="row">
@@ -107,7 +109,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php 
+                            <?php 
                             while ($fila = mysqli_fetch_assoc($rsC)) :
                                
                     
@@ -116,19 +118,19 @@
                         ?>
                             <tr>
                                 <th scope="row">
-                                    <?= $fila['ID_CLIENTE'] ?>
+                                    <?= $fila['id_cliente'] ?>
                                 </th>
                                 <td>
-                                    <?= $fila['NOMBRES'] ?>
+                                    <?= $fila['nombres'] ?>
                                 </td>
                                 <td>
-                                    <?= $fila['FONO'] ?>
+                                    <?= $fila['fono'] ?>
                                 </td>
                                 <td>
-                                    <?= $fila['DESCRIPCION'] ?>
+                                    <?= $fila['descripcion'] ?>
                                 </td>
-                                
-                               
+
+
                             </tr>
 
                             <?php endwhile; ?>

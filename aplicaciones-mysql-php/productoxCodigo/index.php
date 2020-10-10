@@ -60,19 +60,19 @@
 
                         <tr>
                             <th scope="col">Producto</th>
-                            <td><?=$fila['DESCRIPCION']?></td>
+                            <td><?=$fila['descripcion']?></td>
                         </tr>
                         <tr>
                             <th scope="col">Precio</th>
-                            <td><?=  $fila['PRECIO'] ?></td>
+                            <td><?=  $fila['precio'] ?></td>
                         </tr>
                         <tr>
                             <th scope="col">Stock</th>
-                            <td><?= $fila['STOCK'] ?></td>
+                            <td><?= $fila['stock'] ?></td>
                         </tr>
                         <tr>
                             <th scope="col">Fecha de vencimiento</th>
-                            <td><?=  $fila['FECHA_VENC'] ?></td>
+                            <td><?=  $fila['fecha_venc'] ?></td>
                         </tr>
                     </table>
                     </div>
