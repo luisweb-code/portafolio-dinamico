@@ -31,6 +31,7 @@
                 <th>TELEFONO</th>
                 <th>DISTRITO</th>
                 <th>EMAIL</th>
+              
             </thead>
             <tbody>
                 <?php foreach($cliente as $cli): ?>
@@ -41,6 +42,7 @@
                     <td><?= $cli[3] ?></td>
                     <td><?= utf8_decode($cli[4]) ?></td>
                     <td><?= $cli[5] ?></td>
+                   
                 </tr>
                 <?php endforeach;?>
             </tbody>

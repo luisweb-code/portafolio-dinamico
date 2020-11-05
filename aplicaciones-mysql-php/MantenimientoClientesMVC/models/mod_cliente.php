@@ -197,6 +197,45 @@ class mod_cliente{
             header('Location: index.php');
 
     }
+
+    public function eliminaCliente($condb)
+    {
+        $sql = "DELETE FROM cliente WHERE id_cliente = '{$this->getCodigo()}';";
+        $rs = mysqli_query($condb, $sql);
+        
+    }
+
+    public function actualizaCliente($condb)
+    {
+        $sql = "UPDATE CLIENTE 
+        SET nombres = '{$this->getNombres()}',
+        paterno = '{$this->getPaterno()}', 
+        materno = '{$this->getMaterno()}', 
+        direccion = '{$this->getDireccion()}', 
+        fono = '{$this->getFono()}',
+        id_distrito = '{$this->getDistrito()}', 
+        email = '{$this->getCorreo()}', 
+        imagen = null 
+        WHERE id_cliente = '{$this->getCodigo()}'";
+    
+
+        $resultado = false;
+        $rs =  mysqli_query($condb, $sql);
+    
+
+        if($rs){
+            $resultado = true;
+        }else{
+            $resultado = false;
+        }
+
+        return $resultado;
+
+           
+
+    }
+
+
 }
 
 
