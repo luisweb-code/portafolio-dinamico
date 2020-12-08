@@ -92,6 +92,7 @@ INSERT INTO BOLETA(fecha, id_cliente) VALUES ('2015/11/20', 'C0001');
 SELECT * FROM BOLETA;
 
 
+
 # Insertando registros a la tabla detalleBoleta
 
 INSERT INTO DETALLEBOLETA VALUES(1, 'P0005', 10);
