@@ -1,0 +1,13 @@
+Implemente una aplicación web con JavaScript que permita controlar las votaciones online de 4 candidatas
+a un reinado de belleza
+
+-> El boceto se lo entregara la Señorita: Julia via correo electronico.
+/*Tener en cuenta*/
+-> Implementar toda la aplicación en una carpeta llamada webcandidatas
+-> Cada candidata debe presentar su nombre completo y su edad
+-> Cada candidata tendrá un botón Votar para que el usuario pueda seleccionar a la candidata de su preferencia,
+    en el mismo instante se deberá emitir resultados como << Total de votos >> y el porcentaje 
+    que este representa frente a las demás candidatas.
+
+-> Al final deberá mostrar el resumen de las votaciones, el total de votantes y la ganadora 
+hasta el momento junto el total de votos recaudados.
