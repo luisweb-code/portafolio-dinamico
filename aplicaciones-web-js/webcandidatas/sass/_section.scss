@@ -1,6 +1,6 @@
 .main {
   .r-container {
-      border:5px solid $fondo-blanco;
+    border: 5px solid $fondo-blanco;
   }
 
   .img-contenedor {
@@ -8,7 +8,7 @@
     img {
       display: block;
       margin: 1px auto;
-      width: 50%;
+      width: 35%;
       height: auto;
     }
   }
@@ -46,10 +46,13 @@
     }
   }
   .r-resultados {
+    border-top: 5px solid $texto-blanco;
+    border-bottom: 5px solid $texto-blanco;
     .totalVotantes {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 25px;
+      color: $fondo-azul;
     }
     .ganadora {
       text-transform: uppercase;

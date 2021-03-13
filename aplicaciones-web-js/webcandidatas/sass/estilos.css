@@ -26,7 +26,7 @@ header {
   .main .img-contenedor img {
     display: block;
     margin: 1px auto;
-    width: 50%;
+    width: 35%;
     height: auto; }
 .main .nom-candidata {
   text-transform: uppercase;
@@ -56,17 +56,21 @@ header {
   .main .bt-button:hover {
     background-color: #fff;
     color: rgba(251, 119, 251, 0.678); }
-.main .r-resultados .totalVotantes {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 25px; }
-.main .r-resultados .ganadora {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px; }
+.main .r-resultados {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white; }
+  .main .r-resultados .totalVotantes {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(54, 51, 250, 0.781); }
+  .main .r-resultados .ganadora {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px; }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   width: 100%; }

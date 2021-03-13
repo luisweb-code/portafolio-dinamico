@@ -9,6 +9,14 @@ function voto1() {
 function publicacionCandidta1(votos1) {
   let candidata1 = document.getElementById("idTotalVotos1");
   candidata1.innerText = votos1;
+  if (votos1 > votos2 && votos1 > votos3 && votos1 > votos4) {
+    let candidata = document.getElementById("idGanadora");
+    candidata.innerHTML = "Danna Garcia";
+    let votos = document.getElementById("idVotos");
+    votos.innerHTML = votos1;
+    let totalesvotos = document.getElementById("idTotalVotantes");
+    totalesvotos.innerHTML = getTotales();
+  }
 }
 
 function porcentajeCandidata1(votos1) {
@@ -28,6 +36,14 @@ function voto2() {
 function publicacionCandidta2(votos2) {
   let candidata2 = document.getElementById("idTotalVotos2");
   candidata2.innerText = votos2;
+  if (votos2 > votos1 && votos2 > votos3 && votos2 > votos4) {
+    let candidata = document.getElementById("idGanadora");
+    candidata.innerHTML = "Victoria Jenkins";
+    let votos = document.getElementById("idVotos");
+    votos.innerHTML = votos2;
+    let totalesvotos = document.getElementById("idTotalVotantes");
+    totalesvotos.innerHTML = getTotales();
+  }
 }
 
 function porcentajeCandidata2(votos2) {
@@ -47,6 +63,14 @@ function voto3() {
 function publicacionCandidta3(votos3) {
   let candidata3 = document.getElementById("idTotalVotos3");
   candidata3.innerText = votos3;
+  if (votos3 > votos1 && votos3 > votos2 && votos3 > votos4) {
+    let candidata = document.getElementById("idGanadora");
+    candidata.innerHTML = "Natalia Garcia";
+    let votos = document.getElementById("idVotos");
+    votos.innerHTML = votos3;
+    let totalesvotos = document.getElementById("idTotalVotantes");
+    totalesvotos.innerHTML = getTotales();
+  }
 }
 
 function porcentajeCandidata3(votos3) {
@@ -66,6 +90,14 @@ function voto4() {
 function publicacionCandidta4(votos4) {
   let candidata4 = document.getElementById("idTotalVotos4");
   candidata4.innerText = votos4;
+  if (votos4 > votos1 && votos4 > votos2 && votos4 > votos3) {
+    let candidata = document.getElementById("idGanadora");
+    candidata.innerHTML = "Sofia Mondragón";
+    let votos = document.getElementById("idVotos");
+    votos.innerHTML = votos4;
+    let totalesvotos = document.getElementById("idTotalVotantes");
+    totalesvotos.innerHTML = getTotales();
+  }
 }
 
 function porcentajeCandidata4(votos4) {
@@ -77,24 +109,4 @@ function porcentajeCandidata4(votos4) {
 function getTotales() {
   let total = votos1 + votos2 + votos3 + votos4;
   return total;
-}
-
-function ganadora() {
-  if (votos1 > votos2) {
-    let candidata = document.getElementById("idGanadora");
-    candidata.innerHTML = "Danna Garcia";
-    let votos = document.getElementById("idVotos");
-    votos.innerHTML = votos1;
-    let totalesvotos = document.getElementById("idTotalVotantes");
-    totalesvotos.innerHTML = getTotales();
-  }
-
-  if (votos2 > votos1) {
-    let candidata = document.getElementById("idGanadora");
-    candidata.innerHTML = "Victoria Jenkins";
-    let votos = document.getElementById("idVotos");
-    votos.innerHTML = votos2;
-    let totalesvotos = document.getElementById("idTotalVotantes");
-    totalesvotos.innerHTML = getTotales();
-  } 
 }
