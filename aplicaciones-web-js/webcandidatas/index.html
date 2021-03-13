@@ -21,10 +21,19 @@
               <img src="./img/candidata_1.jpg" alt="candidata1" />
             </div>
             <p class="nom-candidata">Danna Garcia</p>
-            <button type="button" class="bt-button" id="idVoto1" onclick="getVoto()">Votar</button>
-            <p class="total-votos">total de votos <i id="idTotalVotos">7</i></p>
+            <button
+              type="button"
+              class="bt-button"
+              id="idVoto1"
+              onclick="voto1()"
+            >
+              Votar
+            </button>
+            <p class="total-votos">
+              total de votos <i id="idTotalVotos1">0</i>
+            </p>
             <p class="por-votos">
-              porcentaje de votos <i id="idPorVotos">12.65%</i>
+              porcentaje de votos <i id="idPorVotos1">12.65</i> %
             </p>
           </div>
         </div>
@@ -33,11 +42,20 @@
             <div class="img-contenedor">
               <img src="./img/candidata_2.jpg" alt="candidata2" />
             </div>
-            <p class="nom-candidata">Nombre Candidata</p>
-            <button type="submit" class="bt-button" id="idCandidata2">Votar</button>
-            <p class="total-votos">total de votos <i id="idTotalVotos">7</i></p>
+            <p class="nom-candidata">Victoria Jenkins</p>
+            <button
+              type="submit"
+              class="bt-button"
+              id="idVoto2"
+              onclick="voto2()"
+            >
+              Votar
+            </button>
+            <p class="total-votos">
+              total de votos <i id="idTotalVotos2">0</i>
+            </p>
             <p class="por-votos">
-              porcentaje de votos <i id="idPorVotos">12.65%</i>
+              porcentaje de votos <i id="idPorVotos2">12.65</i> %
             </p>
           </div>
         </div>
@@ -48,11 +66,13 @@
             <div class="img-contenedor">
               <img src="./img/candidata_3.jpg" alt="candidata3" />
             </div>
-            <p class="nom-candidata">Nombre Candidata</p>
-            <button type="button" class="bt-button">Votar</button>
-            <p class="total-votos">total de votos <i id="idTotalVotos">7</i></p>
+            <p class="nom-candidata" id="idNombre3">Natalia Garcia</p>
+            <button type="button" class="bt-button" id="idVoto3" onclick="voto3()">Votar</button>
+            <p class="total-votos">
+              total de votos <i id="idTotalVotos3">0</i>
+            </p>
             <p class="por-votos">
-              porcentaje de votos <i id="idPorVotos">12.65%</i>
+              porcentaje de votos <i id="idPorVotos3">12.65</i>%
             </p>
           </div>
         </div>
@@ -61,22 +81,27 @@
             <div class="img-contenedor">
               <img src="./img/candidata_4.jpg" alt="candidata4" />
             </div>
-            <p class="nom-candidata">Nombre Candidata</p>
-            <button type="button" class="bt-button">Votar</button>
-            <p class="total-votos">total de votos <i id="idTotalVotos">7</i></p>
+            <p class="nom-candidata" id="idNombre4">Sofia Mondragón</p>
+            <button type="button" class="bt-button" id="idVoto4" onclick="voto4()">Votar</button>
+            <p class="total-votos">
+              total de votos <i id="idTotalVotos4">0</i>
+            </p>
             <p class="por-votos">
-              porcentaje de votos <i id="idPorVotos">12.65%</i>
+              porcentaje de votos <i id="idPorVotos4">12.65</i>%
             </p>
           </div>
         </div>
       </div>
       <div class="row">
-          <div class="col-12">
-              <div class="r-resultados">
-                 <p class="totalVotantes">total de votantes <i id="idTotalVotantes">12</i></p>   
-                 <p class="ganadora">ganadora <i id="idGanadora">Luz</i></p>   
-              </div>
+        <div class="col-12">
+          <div class="r-resultados">
+            <button type="button" onclick="ganadora()">Resultados</button>
+            <p class="totalVotantes">
+              total de votantes <i id="idTotalVotantes">12</i>
+            </p>
+            <p class="ganadora">ganadora <i id="idGanadora">Luz</i> (<i id="idVotos">0</i>) </p>
           </div>
+        </div>
       </div>
     </section>
 
