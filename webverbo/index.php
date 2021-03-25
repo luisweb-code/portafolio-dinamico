@@ -1,6 +1,6 @@
 <?php 
 session_start();
-error_reporting(0);
+/* error_reporting(0); */
 require_once ('autoload.php');
 require_once ('config/db.php');
 require_once ('config/parameters.php');

@@ -1,7 +1,7 @@
 <ifModule mod_rewrite.c>
 #activar rewrite
 RewriteEngine on
-ErrorDocument 404 http://localhost/webverbos/error/
+ErrorDocument 404 http://localhost/webverbo/error/
 
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f

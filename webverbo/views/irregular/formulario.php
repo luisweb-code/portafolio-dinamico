@@ -2,7 +2,7 @@
 
 $irregular = new irregularController();
 $row = $irregularVerb->fetch_array(MYSQLI_ASSOC);
-$irregular->consultar();
+/* $irregular->consultar(); */
 
 ?>
 <div class="container">
