@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/styles.css" />
     <title>Calculadora Binaria</title>
-</head>
-<body>
-    <h3>Creacion de calculadora binaria</h3>
-    
-</body>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="fondoCal">
+          <div class="pantalla">
+              <p id="idPantalla">1010101010111</p>
+          </div>
+          <div class="contTableroTipo">
+              <div class="tablero" id="idTablero">
+                  <button type="button" class="btn-numero" id="idUno" value="1">1</button>
+                  <button type="button" class="btn-numero" id="idDos" value="2">2</button>
+                  <button type="button" class="btn-numero" id="idTres" value="3">3</button>
+                  <button type="button" class="btn-numero" id="idCuatro" value="4">4</button>
+                  <button type="button" class="btn-numero" id="idCinco" value="5">5</button>
+                  <button type="button" class="btn-numero" id="idSeis" value="6">6</button>
+                  <button type="button" class="btn-numero" id="idSiete" value="7">7</button>
+                  <button type="button" class="btn-numero" id="idOcho" value="8">8</button>
+                  <button type="button" class="btn-numero" id="idNueve" value="9">9</button>
+                  <button type="button" class="btn-numero" id="idCero" value="0">0</button>
+                  <button type="button" class="btn-numero-limpiar" id="idLimpiar">Limpiar</button>
+              </div>
+              <div class="tipo" id="convertir">
+                  <button type="button" class="btn-numero" id="idBinario">Binario</button>  
+                  <button type="button" class="btn-numero" id="idDecimal">Decimal</button>  
+              </div> 
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
 </html>
