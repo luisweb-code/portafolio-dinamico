@@ -4,93 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Online Electrodomesticos</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./sass/estilos.css">
+    <title>Productos Electrodomésticos</title>
   </head>
-  <body>
+  <body class="container">
     <header>
-      <h2 class="h-titulo">venta der productos electrodomésticos</h2>
-      <div class="h-portada">
-        <img src="./img/img_banner.jpg" alt="imagen_banner" />
+      <div class="row row-cols-12">
+        <div class="col-xl-12 hTitulo">
+          <div class=" text-white text-center text-uppercase">
+            <h3 class="titulo">venta de productos electrodomesticos</h3>
+          </div>
+        </div>
+        <div class="col-xl-12">
+          <div class="hImagen">
+            <img src="./img/img_banner.jpg" class="img-f" alt="imagen" >
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="main">
-      <div class="sec-form">
-        <form action="#" method="post" class="m-formulario" id="idFormulario">
-          <label for="#" class="m-titulo">Cliente</label>
-          <input
-            class="m-subinput"
-            type="text"
-            name="txtNombre"
-            id="idNombre"
-            value=""
-          />
-          <label for="#" class="m-titulo">Producto</label>
-          <select class="m-subinput" name="txtProducto" id="idProducto">
-            <option value="cocina" id="idCocina">Cocina</option>
-            <option value="refrigeradora" id="idRefrigeradora">
-              Refrigeradora
-            </option>
-            <option value="television" id="idTelevision">Televisión</option>
-            <option value="lavadora" id="idLavadora">Lavadora</option>
-            <option value="radiograbadora" id="idRadioGrabadora">
-              Radio Grabadora
-            </option>
-          </select>
-          <label for="#" class="m-titulo">Cantidad</label>
-          <input
-            class="m-subinput"
-            type="text"
-            name="txtCantidad"
-            id="idCantidad"
-            value=""
-          />
-          <input
-            type="submit"
-            class="btn-procesar"
-            value="Procesar"
-            id="idProcesar"
-          />
-        </form>
+    <main>
+      <div class="row row-cols-12 mt-5">
+        <div class="col-xl-12">
+          <div class="mForm">
+            <form action="#" id="miFormulario" method="POST">
+              <div class="mb-3">
+                <label for="idCliente" class="form-label">Nombre del Cliente</label>
+                <input type="text" class="form-control" name="txtCliente" id="idCliente" placeholder="Carolina">
+              </div>
+              <div class="mb-3">
+                <label for="idProducto">Producto</label>
+                <select class="form-select" aria-label="Default select example" id="idProducto" name="txtProducto">
+                  <option value="cocina">Cocina 6 Hormillas</option>
+                  <option value="refrigeradora">Refrigeradora</option>
+                  <option value="television">Televisión</option>
+                  <option value="lavadora">Lavadora</option>
+                  <option value="radiograbadora">Radiograbadora</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="idCantidad" class="form-label">Cantidad</label>
+                <input type="text" class="form-control" name="txtCantidad" id="idCantidad" placeholder="Cantidad en numero">
+              </div>
+              <button class="btn btn-success" type="submit" value="procesar" id="idProcesar" name="procesar">Procesar</button>            
+              <button class="btn btn-warning" type="reset" value="limpiar" id="limpiar" name="limpiar">Borrar</button>
+            </form>
+          </div>
+        </div>
       </div>
-
-      <div class="sec-result">
-        <table class="m-result">
-          <tr>
-            <td>Precio del producto</td>
-
-            <td id="idPrecio">$0.0</td>
-          </tr>
-          <tr>
-            <td>Subtotal a pagar</td>
-
-            <td id="idSubtotal">$0.0</td>
-          </tr>
-          <tr>
-            <td>Monto de descuento</td>
-
-            <td id="idMontoDescuento">$0.0</td>
-          </tr>
-          <tr>
-            <td>Monto a pagar</td>
-
-            <td id="idMontoPago">$0.0</td>
-          </tr>
-          <!--  <tr>
-                    <td>hola</td>
-                </tr> -->
-        </table>
-      </div>
-    </section>
+      <div class="row row-cols-12 mt-5">
+        <div class="col-xl-12">
+          <div class="mTable">
+            <table class="table table-striped table-hover" id="idTabla">
+              <thead>
+                <th>Cliente</th>
+                <th>Precio Producto</th>
+                <th>Subtotal a pagar</th>
+                <th>Monto descuento</th>
+                <th>Monto a pagar</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Carolina</td>
+                  <td>$1200.00</td>
+                  <td>$1200.00</td>
+                  <td>$1200.00</td>
+                  <td>$1200.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>      
+    </main>
 
     <footer>
-      <div class="f-derechos">
-        <p>
-          Todos los derechos reservados - Ing.Computación Luis Alfredo Carrasco
-        </p>
+      <div class="row row-cols-12 mt-5">
+        <div class="col-xl-12 text-center text-uppercase">
+          <div class="fDerechos">
+            <b>
+              Derechos reservados &copy Luis Alfredo
+            </b>              
+          </div>
+        </div>
       </div>
     </footer>
+
+    <script src="./js/main.js" type="module"></script>
   </body>
-  <script src="./js/main.js"></script>
 </html>

@@ -1,0 +1,18 @@
+main {
+  .mForm {
+    box-shadow: 3px 3px 6px $bgNegro;
+    padding: 1em;
+    #idCliente {
+      width: 80%;
+    }
+    #idSelect {
+      width: 50%;
+    }
+    #idCantidad {
+      width: 40%;
+    }
+  }
+  .mTable {
+    box-shadow: 3px 3px 6px $bgNegro;
+  }
+}
