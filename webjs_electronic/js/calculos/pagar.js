@@ -1,27 +1,68 @@
 const d = document;
 
 function pagoTotal(cliente, producto, cantidad, $tabla) {
+  let subTotalPago, montoDescuento, montoPagar, precio;
   switch (producto) {
     case "cocina":
-      let precio = 1200.0;
-      let subTotalPago = precio * Number(cantidad);
-      let montoDescuento = precio;
-      let montoPagar = subTotalPago - montoDescuento;
-      console.log(cliente, precio, subTotalPago, montoDescuento, montoPagar);
-      console.log($tabla.rows[1].cells[0]);
-      /* $tabla.rows[1].cells[0].innerText = cliente;
-      $tabla.rows[1].cells[1].innerText = cliente;
-      $tabla.rows[1].cells[2].innerText = cliente;
-      $tabla.rows[1].cells[3].innerText = cliente;
-      $tabla.rows[1].cells[4].innerText = cliente; */
-      for (let i = 0; i < 5; i++) {
-        $tabla.rows[1].cells[i].innerText = cliente;
-          
-      }
-      
-      break;
+      precio = 1200;
+      subTotalPago = precio * Number(cantidad);
+      montoDescuento = precio;
+      montoPagar = subTotalPago - montoDescuento;
 
-    default:
+      $tabla.rows[1].cells[0].innerText = cliente;
+      $tabla.rows[1].cells[1].innerText = `$ ${precio.toFixed(2)}`;
+      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
+      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
+      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+
+      break;
+    case "refrigeradora":
+      precio = 2500;
+      subTotalPago = precio * Number(cantidad);
+      montoDescuento = precio;
+      montoPagar = subTotalPago - montoDescuento;
+      $tabla.rows[1].cells[0].innerText = cliente;
+      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
+      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
+      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
+      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+
+      break;
+    case "television":
+      precio = 3200;
+      subTotalPago = precio * Number(cantidad);
+      montoDescuento = precio;
+      montoPagar = subTotalPago - montoDescuento;
+      $tabla.rows[1].cells[0].innerText = cliente;
+      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
+      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
+      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
+      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+
+      break;
+    case "lavadora":
+      precio = 1000;
+      subTotalPago = precio * Number(cantidad);
+      montoDescuento = precio;
+      montoPagar = subTotalPago - montoDescuento;
+      $tabla.rows[1].cells[0].innerText = cliente;
+      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
+      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
+      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
+      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+
+      break;
+    case "radiograbadora":
+      precio = 700;
+      subTotalPago = precio * Number(cantidad);
+      montoDescuento = precio;
+      montoPagar = subTotalPago - montoDescuento;
+      $tabla.rows[1].cells[0].innerText = cliente;
+      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
+      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
+      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
+      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+
       break;
   }
 }
