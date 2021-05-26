@@ -4,64 +4,143 @@ function pagoTotal(cliente, producto, cantidad, $tabla) {
   let subTotalPago, montoDescuento, montoPagar, precio;
   switch (producto) {
     case "cocina":
-      precio = 1200;
-      subTotalPago = precio * Number(cantidad);
-      montoDescuento = precio;
-      montoPagar = subTotalPago - montoDescuento;
+      if (Number(cantidad) === 1) {
+        precio = 1200;
+        subTotalPago = precio;
+        montoDescuento = precio;
+        montoPagar = precio;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
 
-      $tabla.rows[1].cells[0].innerText = cliente;
-      $tabla.rows[1].cells[1].innerText = `$ ${precio.toFixed(2)}`;
-      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
-      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
-      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      } else {
+        precio = 1200;
+        subTotalPago = precio * Number(cantidad);
+        montoDescuento = precio;
+        montoPagar = subTotalPago - montoDescuento;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      }
 
       break;
     case "refrigeradora":
-      precio = 2500;
-      subTotalPago = precio * Number(cantidad);
-      montoDescuento = precio;
-      montoPagar = subTotalPago - montoDescuento;
-      $tabla.rows[1].cells[0].innerText = cliente;
-      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
-      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
-      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
-      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+      if (Number(cantidad) === 1) {
+        precio = 2500;
+        subTotalPago = precio;
+        montoDescuento = precio;
+        montoPagar = precio;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      } else {
+        precio = 2500;
+        subTotalPago = precio * Number(cantidad);
+        montoDescuento = precio;
+        montoPagar = subTotalPago - montoDescuento;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      }
 
       break;
     case "television":
-      precio = 3200;
-      subTotalPago = precio * Number(cantidad);
-      montoDescuento = precio;
-      montoPagar = subTotalPago - montoDescuento;
-      $tabla.rows[1].cells[0].innerText = cliente;
-      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
-      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
-      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
-      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+      if (Number(cantidad) === 1) {
+        precio = 3200;
+        subTotalPago = precio;
+        montoDescuento = precio;
+        montoPagar = precio;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      } else {
+        precio = 3200;
+        subTotalPago = precio * Number(cantidad);
+        montoDescuento = precio;
+        montoPagar = subTotalPago - montoDescuento;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      }
 
       break;
     case "lavadora":
-      precio = 1000;
-      subTotalPago = precio * Number(cantidad);
-      montoDescuento = precio;
-      montoPagar = subTotalPago - montoDescuento;
-      $tabla.rows[1].cells[0].innerText = cliente;
-      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
-      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
-      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
-      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+      if (Number(cantidad) === 1) {
+        precio = 1000;
+        subTotalPago = precio;
+        montoDescuento = precio;
+        montoPagar = precio;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      } else {
+        precio = 1000;
+        subTotalPago = precio * Number(cantidad);
+        montoDescuento = precio;
+        montoPagar = subTotalPago - montoDescuento;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      }
 
       break;
     case "radiograbadora":
-      precio = 700;
-      subTotalPago = precio * Number(cantidad);
-      montoDescuento = precio;
-      montoPagar = subTotalPago - montoDescuento;
-      $tabla.rows[1].cells[0].innerText = cliente;
-      $tabla.rows[1].cells[1].innerText = `$${precio.toFixed(2)}`;
-      $tabla.rows[1].cells[2].innerText = `$ ${subTotalPago.toFixed(2)}`;
-      $tabla.rows[1].cells[3].innerText = `$ ${montoDescuento.toFixed(2)}`;
-      $tabla.rows[1].cells[4].innerText = `$ ${montoPagar.toFixed(2)}`;
+      if (Number(cantidad) === 1) {
+        precio = 700;
+        subTotalPago = precio;
+        montoDescuento = precio;
+        montoPagar = precio;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      } else {
+        precio = 700;
+        subTotalPago = precio * Number(cantidad);
+        montoDescuento = precio;
+        montoPagar = subTotalPago - montoDescuento;
+        const arrDatos = [precio, subTotalPago, montoDescuento, montoPagar];
+
+        for (let i = 0; i < arrDatos.length; i++) {
+          $tabla.rows[1].cells[i].innerText = `$ ${arrDatos[i]}.00`;
+        }
+
+        $tabla.rows[1].cells[4].innerText = cliente;
+      }
 
       break;
   }
@@ -83,7 +162,12 @@ export default function montoPago(formulario, procesar, tabla) {
       cantidad === "" ||
       cliente === ""
     ) {
-      alert("Error en los datos");
+      Swal.fire({
+        title: 'Hay error en los datos!',
+        icon: 'error',
+        confirmButtonText: 'Intentelo de nuevo',
+        allowOutsideClick: false
+      })
     } else {
       //console.log(cliente, producto, cantidad);
       pagoTotal(cliente, producto, cantidad, $tabla);
