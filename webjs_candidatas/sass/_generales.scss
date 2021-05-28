@@ -1,14 +1,7 @@
-* {
-  box-sizing: border-box;
+*{
+    font-family: 'Bitter', serif;
 }
 
 body{
-  background-color: $fondo-plata;
+    background-color: $bgGris;
 }
-
-html {
-  min-height: 100%;
-  position: relative;
-}
-
-
