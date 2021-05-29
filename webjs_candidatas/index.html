@@ -10,7 +10,7 @@
   </head>
   <body class="container">
     <header>
-      <div class="row row-cols-12">
+      <div class="row row-cols-12 mb-4">
         <div class="col-xl-12">
           <h2 class="text-center">Voto candidatas</h2>
         </div>
@@ -18,33 +18,92 @@
     </header>
     <div class="main">
       <div class="row row-cols-12">
-        <div class="col-xl-6 text-white">
-          <div>
-            <p>Candidatas 1-6</p>
+        <div class="col-xl-3 col-sm-6 text-white">
+          <div class="candidata">
+            <img src="./img/c1.jpg" alt="c1" />
+            <h5 class="nom_candidata">
+              Marisol Romero <br />
+              26 años
+            </h5>
+            <button type="button" id="candidataUno" value="candidataUno">
+              Votar
+            </button>
+            <p class="total_votos" id="total_votos">
+              total de votos:<i id="cantidad_uno_votos">0</i>
+            </p>
+            <p class="por_votos" id="por_votos">
+              porcentaje de votos:<i id="porcentaje_uno_votos">0</i>%
+            </p>
           </div>
         </div>
-        <div class="col-xl-6 text-white">
-          <div>
-            <p>Candidatas 2-6</p>
+        <div class="col-xl-3 col-sm-6 text-white">
+          <div class="candidata">
+            <img src="./img/c2.jpg" alt="c2" />
+            <h5 class="nom_candidata">
+              Jessica Fernández <br />
+              24 años
+            </h5>
+            <button type="button" id="candidataDos" value="candidataDos">
+              Votar
+            </button>
+            <p class="total_votos" id="total_votos">
+              total de votos:<i id="cantidad_dos_votos">0</i>
+            </p>
+            <p class="por_votos" id="por_votos">
+              porcentaje de votos:<i id="porcentaje_dos_votos">0</i>%
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 text-white">
+          <div class="candidata">
+            <img src="./img/c3.jpg" alt="c3" />
+            <h5 class="nom_candidata">
+              Natalia Petrov <br />
+              28 años
+            </h5>
+            <button type="button" id="candidataTres" value="candidataTres">
+              Votar
+            </button>
+            <p class="total_votos" id="total_votos">
+              total de votos:<i id="cantidad_tres_votos">0</i>
+            </p>
+            <p class="por_votos" id="por_votos">
+              porcentaje de votos:<i id="porcentaje_tres_votos">0</i>%
+            </p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 text-white">
+          <div class="candidata">
+            <img src="./img/c4.jpg" alt="c4" />
+            <h5 class="nom_candidata">
+              Tasani Saeli <br />
+              25 años
+            </h5>
+            <button type="button" id="candidataCuatro" value="candidataCuatro">
+              Votar
+            </button>
+            <p class="total_votos" id="total_votos">
+              total de votos:<i id="cantidad_cuatro_votos">0</i>
+            </p>
+            <p class="por_votos" id="por_votos">
+              porcentaje de votos:<i id="porcentaje_cuatro_votos">0</i>%
+            </p>
           </div>
         </div>
       </div>
-      <div class="row row-cols-12">
-        <div class="col-xl-6 text-white">
-          <div>
-            <p>Candidatas 3-6</p>
-          </div>
-        </div>
-        <div class="col-xl-6 text-white">
-          <div>
-            <p>Candidatas 4-6</p>
+      <div class="row row-cols-12 mt-5">
+        <div class="col-xl-12">
+          <div class="resultados">
+            <h3 class="total_votantes">
+              total de votantes: <i id="total_votantes">0</i>
+            </h3>
+            <h4 class="ganadora">ganadora:<i id="ganadora_nombre"></i></h4>
           </div>
         </div>
       </div>
     </div>
-
     <footer>
-      <div class="row row-cols-12">
+      <div class="row row-cols-12 mt-5">
         <div class="col-xl-12 text-white text-center">
           <div class="dReservados">Derechos Reservados &copy Luis Alfredo</div>
         </div>

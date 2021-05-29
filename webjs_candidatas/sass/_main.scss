@@ -1,0 +1,59 @@
+.main {
+  .candidata {
+    img {
+      width: 75%;
+      height: 25em;
+      display: block;
+      margin: 12px auto;
+      border-radius: 1em;
+      box-shadow: 4px 4px 35px $textBlanco;
+    }
+    .nom_candidata {
+      margin-top: 3rem;
+      text-align: center;
+      color: $textoDorado;
+      text-transform: uppercase;
+    }
+    button {
+      padding: 5px 50px;
+      background-color: $bgDorado;
+      color: $textBlanco;
+      border: 1px solid $textBlanco;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 20px auto;
+      display: block;
+      width: 50%;
+      &:hover {
+        background-color: $bgBlanco;
+        color: $textNegro;
+        transition: all 0.5s ease;
+      }
+    }
+    .total_votos,
+    .por_votos {
+      text-align: center;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+  .resultados {
+    border-top: 2px solid $bgDorado;
+    padding-top: 16px;
+    .total_votantes,
+    .ganadora {
+      text-transform: uppercase;
+      font-size: 22px;
+      color: $textBlanco;
+      text-align: center;
+      margin-bottom: 10px;
+      i {
+        margin-left: 12px;
+      }
+    }
+  }
+}
