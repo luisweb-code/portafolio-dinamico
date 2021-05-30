@@ -1,15 +1,10 @@
-<footer>
-    <div class="row row-cols-12 bg-dark text-white text-center text-uppercase p-3">
-        <div class="col-xl-1-12">
-            <div class="fDerechosReservados">
-                Ing. Luis Alfredo &copy
-            </div>
-        </div>
-    </div>
-</footer>
+</div>
+</div>
+</div>
 
-
-<script src="./js/bootstrap.min.js"></script>
+<!-- Core theme JS-->
+<script src="<?=base_url?>js/scripts.js"></script>
+<script src="<?=base_url?>js/bootstrap.min.js"></script>
 </body>
 
 </html>
