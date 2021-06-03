@@ -17,7 +17,7 @@ class boletosController
         $entradaNinos = $_POST['txtEntradaNinos'];
 
 
-        if (isset($comprador) && isset($fecha_actual) && isset($entradaAdultos) && isset($entradaNinos)) {
+        if (!empty($comprador) && !empty($fecha_actual) && !empty($entradaAdultos) && !empty($entradaNinos)) {
             $dias = array("domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado");
             $diaPromocion = $dias[date("w")];
             $boleto = new boletos();
@@ -45,7 +45,8 @@ class boletosController
                 require_once('views/boletos/compra.php');
             }
         } else {
-            echo "Hay error en los datos";
+            $mensaje_error = true;
+            require_once('views/boletos/compra.php');
         }
     }
 }

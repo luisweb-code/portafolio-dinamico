@@ -18,6 +18,12 @@
             Promoción "Miércoles"
         </div>
     </div>
+    <?php if($mensaje_error):?>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>ERROR!</strong> Verifica los campos nuevamente.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <?php endif;?>
     <div class="row row-cols-12 mt-3">
         <div class="col-xl-6">
             <form action="<?=base_url?>boletos/pago" method="POST">
