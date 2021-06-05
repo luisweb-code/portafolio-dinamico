@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&display=swap");
+* {
+  font-family: "Asap", sans-serif; }
+
+body {
+  background-color: rgba(251, 248, 248, 0.561); }
+
+header .hLogo {
+  background-color: rgba(114, 5, 176, 0.64);
+  padding: 10px; }
+  header .hLogo .logo0,
+  header .hLogo .logo1,
+  header .hLogo .logo2,
+  header .hLogo .logo3 {
+    font-size: 2em;
+    font-weight: 400; }
+  header .hLogo .logo0 {
+    color: rgba(246, 250, 24, 0.911);
+    margin: 0 10px; }
+  header .hLogo .logo1 {
+    color: #fff; }
+    header .hLogo .logo1:hover {
+      color: rgba(246, 250, 24, 0.911);
+      transition: all 0.5s ease; }
+  header .hLogo .logo2 {
+    color: #fff; }
+    header .hLogo .logo2:hover {
+      color: #148401;
+      transition: all 0.5s ease; }
+  header .hLogo .logo3 {
+    color: #fff; }
+
+/*# sourceMappingURL=estilos.css.map */
