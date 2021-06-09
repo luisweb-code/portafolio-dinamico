@@ -1,6 +1,6 @@
 header {
   .hLogo {
-    background-color: $bgAzul;
+    background-color: $bgVerde5;
     padding: 10px;
     .logo0,
     .logo1,
@@ -8,29 +8,13 @@ header {
     .logo3 {
       font-size: 2em;
       font-weight: 400;
+      color: $txtBlanco;
     }
     .logo0{
-        color: $bgAmarillo;
+        color: $bgNaranga;
         margin: 0 10px;
     }
-    .logo1 {
-      color: $txtBlanco;
-      &:hover{
-          color:$bgAmarillo;
-          transition: all 0.5s ease;
-      }
-    }
-    .logo2 {
-      color: $txtBlanco;
-      &:hover{
-          color: $bgVerde;
-          transition: all 0.5s ease;
-      }
-    }
-    .logo3 {
-      color: $txtBlanco;
-      
-    }
+    
 
   }
 }

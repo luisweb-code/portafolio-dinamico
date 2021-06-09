@@ -1,0 +1,49 @@
+.main {
+  .card {
+    box-shadow: 2px 2px 10px $txtAzul2;
+    .titulo {
+      color: $txtNegro;
+      padding: 10px auto;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 11px;
+      color: $txtRosa;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .description {
+      color: $txtRojo;
+      padding: 5px auto;
+      text-align: center;
+      font-size: 16px;
+    }
+    .price {
+      color: $txtAzul;
+      font-size: 25px;
+      padding: 5px auto;
+      text-align: center;
+      font-weight: 500;
+    }
+    .btn-boton {
+      background-color: $bgNaranga;
+      color: $txtBlanco;
+      padding: 10px 4em;
+      border-radius: 7px;
+      border: 1px solid $bgNaranga;
+      display: block;
+      margin: 3px auto;
+      cursor: pointer;
+      &:hover {
+        background-color: $txtBlanco;
+        color: $bgNaranga;
+        border: 1px solid $bgNaranga;
+        transition: all 0.5s ease;
+      }
+    }
+    .titulo,
+    .description,
+    .price {
+      margin-bottom: 11px;
+    }
+  }
+}
