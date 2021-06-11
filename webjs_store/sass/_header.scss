@@ -1,20 +1,52 @@
 header {
   .hLogo {
     background-color: $bgVerde5;
-    padding: 10px;
     .logo0,
     .logo1,
     .logo2,
-    .logo3 {
+    .logo3,
+    .logo4,
+    .logo5 {
       font-size: 2em;
       font-weight: 400;
       color: $txtBlanco;
     }
-    .logo0{
-        color: $bgNaranga;
-        margin: 0 10px;
+    .logo0 {
+      color: $bgNaranga;
+      margin: 0 10px;
     }
-    
+    .verLista {
+      .btn-boton {
+        background-color: $txtBlanco;
+        color: $bgVerde;
+        border: 1px solid $bgVerde;
+        padding: 10px 2em;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+        display: block;
+        width: 47%;
+        &:hover {
+          background-color: $bgNaranga;
+          color: $txtBlanco;
+          transition: ease 0.5s all;
+        }
+      }
+      .btn-boton-pago{
+        background-color: $txtRojo;
+        color: $txtBlanco;
+        border: 1px solid $txtRojo;
+        padding: 10px 2em;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover{
+          background-color: $txtAzul3;
+          color: $txtBlanco;
+          transition: all 0.2s ease;
+          border: 1px solid $txtAzul3;
+        }
 
+      }
+    }
   }
 }
