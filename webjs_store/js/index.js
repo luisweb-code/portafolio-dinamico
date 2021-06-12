@@ -17,5 +17,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
     "#p011",
     "#p012"
   );
+  
   compra("#linkCompra");
 });
