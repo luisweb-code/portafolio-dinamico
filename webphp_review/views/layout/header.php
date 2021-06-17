@@ -23,6 +23,7 @@
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>secuencial/cambio">Casa de cambio</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>boletos/compra">Boletos de Teatro</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>onix/registro">Registro personal</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/index">Listado Clientes</a>
                 
             </div>
         </div>
