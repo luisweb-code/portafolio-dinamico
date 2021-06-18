@@ -1,4 +1,9 @@
 <div class="container">
+    <div class="row row-cols-12 p-3">
+        <div class="col-xl-12">
+            <h3 class="text-center text-uppercase">Listado todos los clientes</h3>
+        </div>
+    </div>
     <div class="row row-clos-12">
         <div class="col-xl-12">
             <table class="table table-hover">
