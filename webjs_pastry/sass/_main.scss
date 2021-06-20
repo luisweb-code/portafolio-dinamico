@@ -1,0 +1,61 @@
+main {
+  .mFormulario {
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 20px 4px $bg-cafe6;
+    .miFormulario {
+      padding: 1em;
+      label {
+        color: $bg-cafe6;
+        text-transform: uppercase;
+        margin-right: 12px;
+        font-size: 20px;
+      }
+      input[type="text"] {
+        color: $text-negro;
+        text-align: center;
+        padding: 8px;
+        margin: 0 12px;
+      }
+      input[type="button"] {
+        border: 0;
+        background-color: $bg-cafe6;
+        color: $bg-cafe-claro;
+        padding: 10px 20px;
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover {
+          background-color: $text-negro;
+          color: $text-blanco;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+  .fila {
+    box-shadow: 2px 2px 20px $bg-cafe5;
+  }
+  .sinPadding {
+    padding: 0;
+  }
+  .data-table {
+    background-color: $bg-cafe6;
+    color: $text-blanco;
+  }
+  .mTableInfo {
+    padding: 5px 5px;
+    .tabla-info {
+      font-size: 33px;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+  }
+  .mTableImagen {
+    padding: 5px 5px;
+    img {
+      width: 45%;
+      display: block;
+      margin: 1px auto;
+    }
+  }
+}

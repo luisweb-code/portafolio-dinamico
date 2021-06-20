@@ -1,0 +1,16 @@
+header {
+  .hConsulta {
+    padding-top: 1em;
+    box-shadow: 4px 4px 20px 2px $bg-cafe5;
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      color: $bg-cafe6;
+    }
+    img {
+        display: block;
+        margin: 2px auto;
+        width: 100%;
+    }
+  }
+}

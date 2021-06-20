@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap");
+* {
+  font-family: "Source Serif Pro", serif; }
+
+body {
+  background-color: #e8e4db; }
+
+header .hConsulta {
+  padding-top: 1em;
+  box-shadow: 4px 4px 20px 2px #521d03; }
+  header .hConsulta h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #6c3215; }
+  header .hConsulta img {
+    display: block;
+    margin: 2px auto;
+    width: 100%; }
+
+main .mFormulario {
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 4px 20px 4px #6c3215; }
+  main .mFormulario .miFormulario {
+    padding: 1em; }
+    main .mFormulario .miFormulario label {
+      color: #6c3215;
+      text-transform: uppercase;
+      margin-right: 12px;
+      font-size: 20px; }
+    main .mFormulario .miFormulario input[type="text"] {
+      color: #000;
+      text-align: center;
+      padding: 8px;
+      margin: 0 12px; }
+    main .mFormulario .miFormulario input[type="button"] {
+      border: 0;
+      background-color: #6c3215;
+      color: #e8e4db;
+      padding: 10px 20px;
+      border-radius: 7px;
+      cursor: pointer; }
+      main .mFormulario .miFormulario input[type="button"]:hover {
+        background-color: #000;
+        color: #fff;
+        transition: all 0.5s ease; }
+main .fila {
+  box-shadow: 2px 2px 20px #521d03; }
+main .sinPadding {
+  padding: 0; }
+main .data-table {
+  background-color: #6c3215;
+  color: #fff; }
+main .mTableInfo {
+  padding: 5px 5px; }
+  main .mTableInfo .tabla-info {
+    font-size: 33px;
+    font-weight: 200;
+    text-transform: uppercase; }
+main .mTableImagen {
+  padding: 5px 5px; }
+  main .mTableImagen img {
+    width: 45%;
+    display: block;
+    margin: 1px auto; }
+
+footer .derechos {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #521d03; }
+
+/*# sourceMappingURL=style.css.map */

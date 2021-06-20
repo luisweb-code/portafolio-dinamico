@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <title>Store Pastry</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row row-cols-12 mt-1">
+          <div class="col-xl-12">
+            <div class="hConsulta">
+              <h3>Consulta de productos</h3>
+              <img
+                src="./assets/img/banner_reposteria(1).jpg"
+                alt="bannerRepostreria"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="row row-cols-12 mt-5">
+          <div class="col-xl-12">
+            <div class="mFormulario">
+              <form class="miFormulario" method="POST" action="#">
+                <label for="codigo">codigo del producto</label>
+                <input
+                  type="text"
+                  name="txtCodigo"
+                  id="codigo"
+                  placeholder="P001"
+                />
+                <input type="button" value="Buscar" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-12 mt-5 mb-3 fila">
+          <div class="col-xl-6 sinPadding">
+            <div class="mTableInfo">
+              <table class="table tabla-info">
+                <tr>
+                  <td class="data-table">producto</td>
+                  <td>pastel</td>
+                </tr>
+                <tr>
+                  <td class="data-table">precio</td>
+                  <td>2.00</td>
+                </tr>
+                <tr>
+                  <td class="data-table">stock</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td class="data-table">fecha de vencimiento</td>
+                  <td>2015-09-03</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="col-xl-6 sinPadding">
+            <div class="mTableImagen">
+              <img src="./assets/img/p001.jpg" alt="p001" />
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row row-cols-12 mt3">
+          <div class="col-xl-12">
+            <div class="derechos">
+              <h4>Todos los derechos reservados &copy Luis Carrasco</h4>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/main.js" type="model"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
