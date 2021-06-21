@@ -72,7 +72,7 @@ class Distro
         return $this;
     }
 
-    /* Metdos propios */
+    /* Metodos propios */
     public function getAllDistrito()
     {
         $sql = "SELECT * FROM distro";

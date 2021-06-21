@@ -22,9 +22,10 @@
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>secuencial/cambio">Casa Cambio</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>boletos/compra">Boletos Teatro</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>onix/registro">Registro Personal</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>onix/registro">Onix Personal</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/index">Listado Clientes</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/distro">Buscar Clientes</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>registro/index">Registro Clientes</a>
                 
             </div>
         </div>

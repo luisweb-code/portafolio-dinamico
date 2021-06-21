@@ -178,11 +178,31 @@ class Clientes
         return $this;
     }
     /*
-      Metodos propios 
-    */
+    Metodos propios
+     */
     public function listar()
     {
         $sql = "SELECT * FROM cliente";
+        return $this->db->query($sql);
+
+        $result = false;
+        if ($save) {
+            $result = true;
+        }
+        return $result;
+    }
+
+    public function save()
+    {
+        $sql = "INSERT INTO cliente VALUES('{$this->getId_clientes()}',
+        '{$this->getNombres()}',
+        '{$this->getPaterno()}',
+        '{$this->getMaterno()}',
+        '{$this->getDireccion()}',
+        '{$this->getFono()}',
+        '{$this->getId_distrito()}',
+        '{$this->getEmail()}')";
+
         return $this->db->query($sql);
 
         $result = false;
