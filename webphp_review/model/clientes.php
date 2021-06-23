@@ -211,4 +211,17 @@ class Clientes
         }
         return $result;
     }
+
+    public function delete()
+    {
+        $sql = "DELETE FROM cliente WHERE id_cliente = '{$this-> getId_clientes()}'";
+
+        return $this->db->query($sql);
+
+        $result = false;
+        if($save){
+            $result = true;
+        }
+        return $result;
+    }
 }

@@ -17,6 +17,7 @@
                         <th scope="col">Telefono</th>
                         <th scope="col">Distrito</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,6 +32,11 @@
                         <td scope="row"><?= $fila["fono"] ?></td>
                         <td scope="row"><?= $fila["id_distrito"] ?></td>
                         <td scope="row"><?= $fila["email"] ?></td>
+                        <td>
+                            <form action="<?=base_url?>eliminar/delete" method="POST">
+                                <button class="btn btn-danger" type="submit" name="id" value="<?=$fila["id_cliente"]?>">Eliminar</button>
+                            </form>
+                        </td>
                     </tr>
                     <?php endwhile?>
 

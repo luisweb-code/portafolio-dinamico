@@ -26,6 +26,9 @@
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/index">Listado Clientes</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/distro">Buscar Clientes</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>registro/index">Registro Clientes</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>eliminar/usuario">Eliminar Clientes</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/index">Ver productos</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/actualizar">Actualizar Producto</a>
                 
             </div>
         </div>
