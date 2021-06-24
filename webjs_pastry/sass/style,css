@@ -54,16 +54,15 @@ main .data-table {
 main .mTableInfo {
   padding: 1em; }
   main .mTableInfo .tabla-info {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 27px;
+    font-weight: 200;
     text-transform: uppercase; }
 main .mTableImagen {
   padding: 1em; }
   main .mTableImagen img {
-    width: 40%;
+    width: 45%;
     display: block;
-    margin: 1px auto;
-    border-radius: 3em; }
+    margin: 1px auto; }
 
 footer .derechos {
   text-align: center;
@@ -71,4 +70,4 @@ footer .derechos {
   font-weight: 300;
   color: #521d03; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style,css.map */

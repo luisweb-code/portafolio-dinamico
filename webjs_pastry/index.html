@@ -33,9 +33,9 @@
                   type="text"
                   name="txtCodigo"
                   id="codigo"
-                  placeholder="P001"
+                  placeholder="1"
                 />
-                <input type="button" value="Buscar" />
+                <input type="button" class="btnBuscar" value="Buscar" />
               </form>
             </div>
           </div>
@@ -46,26 +46,26 @@
               <table class="table tabla-info">
                 <tr>
                   <td class="data-table">producto</td>
-                  <td>pastel</td>
+                  <td id="producto">pastel</td>
                 </tr>
                 <tr>
                   <td class="data-table">precio</td>
-                  <td>2.00</td>
+                  <td id="precio">2.00</td>
                 </tr>
                 <tr>
                   <td class="data-table">stock</td>
-                  <td>500</td>
+                  <td id="stock">500</td>
                 </tr>
                 <tr>
                   <td class="data-table">fecha de vencimiento</td>
-                  <td>2015-09-03</td>
+                  <td id="fecha">2015-09-03</td>
                 </tr>
               </table>
             </div>
           </div>
           <div class="col-xl-6 sinPadding">
             <div class="mTableImagen">
-              <img src="./assets/img/p001.jpg" alt="p001" />
+              <img src="./assets/img/1.jpg" alt="imagen" id="imgPostre" />
             </div>
           </div>
         </div>
@@ -82,7 +82,8 @@
       </footer>
     </div>
 
-    <script src="./js/main.js" type="model"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

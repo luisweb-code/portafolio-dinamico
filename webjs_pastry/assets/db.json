@@ -1,72 +1,75 @@
-[
-    {
-        "id":"1",
-        "producto":"pastel",
-        "precio":"2.00",
-        "stock":"500",
-        "date":"2015-09-03"
-    },
-    {
-        "id":"2",
-        "producto":"dulce durazno",
-        "precio":"5.00",
-        "stock":"200",
-        "date":"2015-12-03"
-    },
-    {
-        "id":"3",
-        "producto":"pay de piña",
-        "precio":"4.40",
-        "stock":"50",
-        "date":"2015-05-08"
-    },
-    {
-        "id":"4",
-        "producto":"Helado",
-        "precio":"8.40",
-        "stock":"100",
-        "date":"2015-11-12"
-    },
-    {
-        "id":"5",
-        "producto":"Te",
-        "precio":"5.40",
-        "stock":"10",
-        "date":"2015-12-12"
-    },
-    {
-        "id":"6",
-        "producto":"Cafe",
-        "precio":"20.40",
-        "stock":"100",
-        "date":"2015-08-12"
-    },
-    {
-        "id":"7",
-        "producto":"Galletas",
-        "precio":"12.50",
-        "stock":"50",
-        "date":"2015-06-21"
-    },
-    {
-        "id":"8",
-        "producto":"Dulce de Manzana",
-        "precio":"50.45",
-        "stock":"120",
-        "date":"2015-07-07"
-    },
-    {
-        "id":"9",
-        "producto":"Flan Napolitano",
-        "precio":"35.50",
-        "stock":"100",
-        "date":"2015-09-15"
-    },
-    {
-        "id":"10",
-        "producto":"Ensalada de Manzana",
-        "precio":"35.00",
-        "stock":"190",
-        "date":"2015-12-24"
-    }
-]
+{
+    "postres":[
+        {
+            "id":"1",
+            "producto":"pastel",
+            "precio":"2.00",
+            "stock":"500",
+            "date":"2015-09-03"
+        },
+        {
+            "id":"2",
+            "producto":"dulce durazno",
+            "precio":"5.00",
+            "stock":"200",
+            "date":"2015-12-03"
+        },
+        {
+            "id":"3",
+            "producto":"pay de piña",
+            "precio":"4.40",
+            "stock":"50",
+            "date":"2015-05-08"
+        },
+        {
+            "id":"4",
+            "producto":"Helado",
+            "precio":"8.40",
+            "stock":"100",
+            "date":"2015-11-12"
+        },
+        {
+            "id":"5",
+            "producto":"Te",
+            "precio":"5.40",
+            "stock":"10",
+            "date":"2015-12-12"
+        },
+        {
+            "id":"6",
+            "producto":"Cafe",
+            "precio":"20.40",
+            "stock":"100",
+            "date":"2015-08-12"
+        },
+        {
+            "id":"7",
+            "producto":"Galletas",
+            "precio":"12.50",
+            "stock":"50",
+            "date":"2015-06-21"
+        },
+        {
+            "id":"8",
+            "producto":"Dulce de Manzana",
+            "precio":"50.45",
+            "stock":"120",
+            "date":"2015-07-07"
+        },
+        {
+            "id":"9",
+            "producto":"Flan Napolitano",
+            "precio":"35.50",
+            "stock":"100",
+            "date":"2015-09-15"
+        },
+        {
+            "id":"10",
+            "producto":"Ensalada de Manzana",
+            "precio":"35.00",
+            "stock":"190",
+            "date":"2015-12-24"
+        }
+        
+    ]
+}
