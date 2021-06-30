@@ -116,8 +116,8 @@ class Producto
     }
 
     /*
-      Metodos propios
-    */ 
+    Metodos propios
+     */
 
     public function getAll()
     {
@@ -126,8 +126,46 @@ class Producto
         return $this->db->query($sql);
 
         $result = false;
-        if($save){
-           $result = true; 
+        if ($save) {
+            $result = true;
+        }
+        return $result;
+    }
+
+    public function getProduct()
+    {
+        $sql = "SELECT * FROM producto WHERE id_producto = '{$this->getId_producto()}'";
+        return $this->db->query($sql);
+    }
+
+    public function update()
+    {
+
+        $sql = "UPDATE producto
+        SET descripcion = '{$this->getDescripcion()}',
+        precio= '{$this->getPrecio()}',
+        stock = '{$this->getStock()}',
+        fecha_venc = '{$this->getFecha_venc()}'
+        WHERE id_producto = '{$this->getId_producto()}';";
+
+        return $this->db->query($sql);
+
+        $result = false;
+        if ($save) {
+            $result = true;
+        }
+        return $result;
+
+    }
+
+    public function getDelete()
+    {
+        $sql = "DELETE FROM producto WHERE id_producto = '{$this->getId_producto()}';";
+        return $this->db->query($sql);
+
+        $result = false;
+        if ($save) {
+            $result = true;
         }
         return $result;
     }
