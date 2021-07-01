@@ -10,6 +10,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet"  href="<?=base_url?>css/styles.css"/>
     <link rel="stylesheet"  href="<?=base_url?>css/bootstrap.min.css"/>
+    <link rel="stylesheet"  href="<?=base_url?>css/calendar-win2k-1.css"/>
 </head>
 
 <body>
@@ -29,6 +30,7 @@
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>eliminar/usuario">Eliminar Clientes</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/index">Ver productos</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/actualizar">Actualizar Producto</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/registro">Registro Producto</a>
                 
             </div>
         </div>

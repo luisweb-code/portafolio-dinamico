@@ -169,4 +169,38 @@ class Producto
         }
         return $result;
     }
+
+    public function getRegistroTotal()
+    {
+        $sql = "SELECT (COUNT(id_producto) + 1) AS total_registros FROM producto";
+
+        return $this->db->query($sql);
+    }
+
+    public function guardarProducto()
+    {
+
+        $code = $this->getId_producto();
+        $descripcion = $this->getDescripcion();
+        $precio = $this->getPrecio();
+        $stock = $this->getStock();
+        $fecha = $this->getFecha_venc();
+        
+        $sql = "INSERT INTO producto (id_producto, descripcion, precio, stock, fecha_venc) 
+        VALUES('{$code}',
+        '{$descripcion}', 
+        '{$precio}',
+        '{$stock}',
+        '{$fecha}')";
+
+        return $this->db->query($sql);
+
+        $result = false;
+        if ($save) {
+            $result = true;
+        }
+        return $result;
+
+    }
+
 }
