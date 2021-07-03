@@ -27,11 +27,13 @@
     </div>
     <div class="row row-cols-12 mt-3">
         <div class="col-xl-12">
+            <?php if(!empty($descripcion)):?>
             <?php while($filaDescrip = $descripcion->fetch_assoc()):?>
             <h3 class="text-center p3">
                 Clientes del distrito: <?= $filaDescrip["descripcion"] ?>
             </h3>
             <?php endwhile?>
+            <?php endif?>
         </div>
     </div>
     <div class="row row-cols-12 d-flex justify-content-center mt-4">
@@ -46,6 +48,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php if(!empty($get_Distro)):?>
                     <?php while($getFila = $get_Distro->fetch_assoc()):?>
                     <tr>
                         <th scope="row"><?= $getFila["id_cliente"] ?></th>
@@ -54,11 +57,14 @@
                         <td><?= $getFila["descripcion"] ?></td>
                     </tr>
                     <?php endwhile?>
+                    <?php endif?>
                     <tr>
                         <td colspan="1"></td>
                         <td></td>
                         <td class="fw-bold table-success">Total</td>
+                        <?php if(!empty($row_cnt)):?>
                         <td class="fw-bold table-success"><?= $row_cnt ?></td>
+                        <?php endif?>
                     </tr>
                 </tbody>
             </table>

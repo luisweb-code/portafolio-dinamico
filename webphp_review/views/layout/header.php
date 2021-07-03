@@ -31,6 +31,9 @@
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/index">Ver productos</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/actualizar">Actualizar Producto</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/registro">Registro Producto</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>grafica/index">Graficas</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>api/items">API</a>
+                
                 
             </div>
         </div>

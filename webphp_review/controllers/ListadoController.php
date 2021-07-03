@@ -14,8 +14,10 @@ class listadoController
 
     public function distro()
     {
+
         $distro = new Distro();
         $allDistro = $distro->getAllDistrito();
+
         $id_distro = $_POST['distro'];
 
         $distro = new Distro();
@@ -26,6 +28,10 @@ class listadoController
 
         require_once "views/lista/buscar.php";
 
+    }
+
+    public function buscar()
+    {
     }
 
 }
