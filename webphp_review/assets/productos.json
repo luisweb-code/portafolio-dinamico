@@ -1,1 +1,130 @@
-{"items":[{"id_producto":"P0005","descripcion":"ARROZ CON LECHE-ENVASE ESPECIAL","precio":"13.00","stock":"40","cantidad":"10"},{"id_producto":"P0001","descripcion":"PIZZA CON QUESO EXTRA","precio":"35.00","stock":"15","cantidad":"20"},{"id_producto":"P0002","descripcion":"TORTA DE CHOCOLATE","precio":"45.00","stock":"100","cantidad":"20"},{"id_producto":"P0003","descripcion":"PASTEL DE CHOCOLATE","precio":"25.00","stock":"8","cantidad":"15"},{"id_producto":"P0015","descripcion":"CHOCOTEJAS","precio":"2.00","stock":"100","cantidad":"12"},{"id_producto":"P0004","descripcion":"MOUSE DE MANZANA","precio":"35.00","stock":"70","cantidad":"12"}]}
+{
+  "items": [
+    {
+      "id_producto": "P0001",
+      "descripcion": "PIZZA CON QUESO EXTRA",
+      "precio": "35.00",
+      "stock": "15",
+      "fecha_venc": "2021/05/10"
+    },
+    {
+      "id_producto": "P0002",
+      "descripcion": "TORTA DE CHOCOLATE",
+      "precio": "45.00",
+      "stock": "100",
+      "fecha_venc": "2015/07/04"
+    },
+    {
+      "id_producto": "P0003",
+      "descripcion": "PASTEL DE CHOCOLATE",
+      "precio": "25.00",
+      "stock": "8",
+      "fecha_venc": "2021/06/12"
+    },
+    {
+      "id_producto": "P0004",
+      "descripcion": "MOUSE DE MANZANA",
+      "precio": "35.00",
+      "stock": "70",
+      "fecha_venc": "2015/09/06"
+    },
+    {
+      "id_producto": "P0005",
+      "descripcion": "ARROZ CON LECHE-ENVASE ESPECIAL",
+      "precio": "13.00",
+      "stock": "40",
+      "fecha_venc": "2015/11/04"
+    },
+    {
+      "id_producto": "P0006",
+      "descripcion": "MAZAMORRA MORADA",
+      "precio": "1.50",
+      "stock": "70",
+      "fecha_venc": "2015/12/04"
+    },
+    {
+      "id_producto": "P0007",
+      "descripcion": "YOGURT ARABE",
+      "precio": "3.00",
+      "stock": "100",
+      "fecha_venc": "2015/05/04"
+    },
+    {
+      "id_producto": "P0008",
+      "descripcion": "PAN CON POLLO",
+      "precio": "2.00",
+      "stock": "500",
+      "fecha_venc": "2015/06/05"
+    },
+    {
+      "id_producto": "P0009",
+      "descripcion": "BROWNIE",
+      "precio": "3.00",
+      "stock": "300",
+      "fecha_venc": "2015/05/04"
+    },
+    {
+      "id_producto": "P0010",
+      "descripcion": "BESO DE MOZA",
+      "precio": "1.00",
+      "stock": "400",
+      "fecha_venc": "2015/06/03"
+    },
+    {
+      "id_producto": "P0011",
+      "descripcion": "PYE DE LIMON",
+      "precio": "1.70",
+      "stock": "100",
+      "fecha_venc": "2015/05/02"
+    },
+    {
+      "id_producto": "P0012",
+      "descripcion": "TORTA DE NARANJA",
+      "precio": "16.00",
+      "stock": "10",
+      "fecha_venc": "2015/04/07"
+    },
+    {
+      "id_producto": "P0013",
+      "descripcion": "TORTA DE FRESA",
+      "precio": "41.00",
+      "stock": "100",
+      "fecha_venc": "2015/05/07"
+    },
+    {
+      "id_producto": "P0014",
+      "descripcion": "ALFAJORES",
+      "precio": "0.30",
+      "stock": "400",
+      "fecha_venc": "2015/04/06"
+    },
+    {
+      "id_producto": "P0015",
+      "descripcion": "CHOCOTEJAS",
+      "precio": "2.00",
+      "stock": "100",
+      "fecha_venc": "2015/04/14"
+    },
+    {
+      "id_producto": "P0016",
+      "descripcion": "PASTEL DE CAJETA",
+      "precio": "250.23",
+      "stock": "10",
+      "fecha_venc": "2021-06-30"
+    },
+    {
+      "id_producto": "P0017",
+      "descripcion": "PASTEL DE LIM\u00d3N",
+      "precio": "120.23",
+      "stock": "15",
+      "fecha_venc": "2021-06-30"
+    },
+    {
+      "id_producto": "P0018",
+      "descripcion": "Arroz con leche",
+      "precio": "25.00",
+      "stock": "30",
+      "fecha_venc": "2021/6/30"
+    }
+  ]
+}

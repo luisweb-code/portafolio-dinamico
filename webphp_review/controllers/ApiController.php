@@ -35,7 +35,7 @@ class apiController
                     'descripcion' => $row['descripcion'],
                     'precio' => $row['precio'],
                     'stock' => $row['stock'],
-                    'cantidad' => $row['cantidad'],
+                    'fecha_venc' => $row['fecha_venc'],
                 );
                 array_push($grafs['items'], $item);
             }
