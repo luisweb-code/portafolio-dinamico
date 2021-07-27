@@ -23,7 +23,6 @@
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>secuencial/cambio">Casa Cambio</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>boletos/compra">Boletos Teatro</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>onix/registro">Onix Personal</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/index">Listado Clientes</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>listado/distro">Buscar Clientes</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>registro/index">Registro Clientes</a>
@@ -31,7 +30,6 @@
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/index">Ver productos</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/actualizar">Actualizar Producto</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>producto/registro">Registro Producto</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>grafica/index">Graficas</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>reportes/descargar">Reporte PDF</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?=base_url?>api/items">API</a>
                 
