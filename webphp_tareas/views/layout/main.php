@@ -22,7 +22,35 @@
                 <strong>Vamos por más tareas!</strong> Registro exitoso!!!
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
+            <?php elseif(isset($_SESSION["completado"]) && $_SESSION["completado"] == true):?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Tarea completada</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <?php endif;?>
-            <?php unset($_SESSION["registro_exitoso"])?>
+            <?php unset($_SESSION["registro_exitoso"], $_SESSION["completado"])?>
+        </div>
+    </div>
+    <div class="row row-cols-12 mt-4 mb-4">
+        <div class="col-xl-12">
+        <table class="table table-hover">
+            <thead>
+                <th>Descripcion</th>
+                <th>Fecha</th>
+                <th>Completado</th>
+            </thead>
+            <tbody>
+                <?php while($rowTask = $listaTareas->fetch_assoc() ):?>
+                <tr>
+                    <td><?=$rowTask["descripcion"]?></td>
+                    <td><?=$rowTask["fecha"]?></td>
+                    <td>
+                        <span><a class="bt-success" href="<?=base_url?>tareas/completed?txtid=<?=$rowTask["idtareas"]?>"><i class="fas fa-check-circle"></i></a></span> 
+                        <span><a class="bt-update" href="#"><i class="far fa-edit"></i></a></span> 
+                    </td>                        
+                </tr>
+                <?php endwhile;?>
+            </tbody>
+        </table>
         </div>
     </div>

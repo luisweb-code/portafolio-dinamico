@@ -6,7 +6,7 @@ ErrorDocument 404 http://localhost/portafolio-dinamico/webphp_review/error/
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 
-RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2 [L,QSA]
 
 </ifModule>
 

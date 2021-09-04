@@ -90,4 +90,33 @@ class Tareas
         return $result;
 
     }
+
+    public function getTareas()
+    {
+        $sql = "SELECT * FROM tareas";
+
+        return $this->db->query($sql);
+
+        $result = false;
+        if($save){
+            $result = true;
+        }
+        return $result;
+    }
+
+    public function delete()
+    {
+        $id = $this-> getId_tareas();
+        $sql = "DELETE FROM tareas WHERE idtareas = '{$id}'";
+
+        return $this->db->query($sql);
+
+        $result = false;
+        if($save){
+            $result = true;
+        }
+        return $result;
+
+
+    }
 }

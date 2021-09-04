@@ -1,0 +1,20 @@
+main {
+  .bt-success {
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: $bg-complete;
+    color: $tx-white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .bt-update {
+    font-size: 16px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: $bg-success;
+    color: $tx-white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+}

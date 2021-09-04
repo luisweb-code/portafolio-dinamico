@@ -1,6 +1,6 @@
 </main>
 <footer>
-    <div class="row row-cols-12">
+    <div class="row row-cols-12 mt-5">
         <div class="col-xl-12">
             <div class="derechos-reservados">
                 &copy Ing.Luis Alfredo Carrasco
