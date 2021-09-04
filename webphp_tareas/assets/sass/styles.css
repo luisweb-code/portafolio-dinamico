@@ -1,0 +1,25 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: whitesmoke; }
+
+.bg-purplue {
+  background-color: #72467c !important; }
+
+.text-white {
+  color: #ffffff !important; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 68%; }
+  footer .derechos-reservados {
+    padding: 1em;
+    color: #ffffff;
+    background-color: #72467c;
+    text-align: center;
+    font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */

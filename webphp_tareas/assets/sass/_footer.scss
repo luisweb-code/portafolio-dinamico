@@ -1,0 +1,12 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 68%;
+  .derechos-reservados {
+    padding: 1em;
+    color: $tx-white;
+    background-color: $bg-purplue;
+    text-align: center;
+    font-weight: bold;
+  }
+}

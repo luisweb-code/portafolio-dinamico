@@ -1,0 +1,16 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+    background-color: $bg-silver;
+}
+
+.bg-purplue {
+  background-color: $bg-purplue !important;
+}
+
+.text-white{
+    color: $tx-white !important;
+}
