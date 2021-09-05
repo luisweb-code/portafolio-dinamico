@@ -11,6 +11,10 @@ body {
 .text-white {
   color: #ffffff !important; }
 
+header .bt-brand {
+  padding: 5px 10px;
+  font-size: 2em; }
+
 main .bt-success {
   font-size: 16px;
   padding: 5px 20px;

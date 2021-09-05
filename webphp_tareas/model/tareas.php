@@ -107,7 +107,7 @@ class Tareas
     public function delete()
     {
         $id = $this-> getId_tareas();
-        $sql = "DELETE FROM tareas WHERE idtareas = '{$id}'";
+        $sql = "DELETE FROM tareas WHERE id = '{$id}'";
 
         return $this->db->query($sql);
 
@@ -118,5 +118,26 @@ class Tareas
         return $result;
 
 
+    }
+
+    public function upgrade_task()
+    {
+        $id = $this->getId_tareas();
+        $descripcion = $this->getDescripcion();
+
+        $sql = "UPDATE tareas SET descripcion='{$descripcion}' WHERE id='{$id}'";
+        return $this->db->query($sql);
+
+        $result = false;
+        if($save){
+            $result = true;
+        }
+        return $result;
+    }
+
+    public function getTarea()
+    {
+        $sql = "SELECT * FROM tareas  WHERE id = '{$this->getId_tareas()}'";
+        return $this->db->query($sql);
     }
 }
