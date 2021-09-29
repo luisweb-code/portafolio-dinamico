@@ -1,0 +1,15 @@
+header {
+  .logo {
+    background-color: 1px solid $txt-white;
+    padding: 13px;
+    background-color: $txt-white;
+    .brad-one,
+    .brad-two {
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center !important;
+      color: $txt-silver;
+    }
+  }
+}
