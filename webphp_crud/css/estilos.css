@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+  background-color: rgb(3 18 149 / 78%);
+}
+
+/*Estilos para le titulo*/
+.titulo {
+  border: 1px solid white;
+  padding: 12px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+/*Estliso para el contenedor*/
+.contenedor {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 12px;
+  display: grid;
+  grid-column: 1;
+  width: 30%;
+  margin: auto;
+}
+
+.contenedor .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  width: 96%;
+  padding: 12px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.contenedor .menu a:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 129);
+  transition: all 2s ease;
+}
+
+/*Estilos para le footer*/
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  /*height: 30px;*/
+  width: 100%;
+  border: 1px solid white;
+  color: #fff;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 12px;
+}
+
+/*Estilos para regresar*/
+
+.regresar {
+  padding: 10px;
+}
+
+.regresar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Estilos para mensaje exitos y error*/
+.mensaje {
+  padding: 10px;
+}
+
+.mensaje .exito {
+  background-color: rgb(27, 133, 1);
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+.mensaje .fracaso {
+  background-color: rgb(133, 1, 1);
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  /*display: none;*/
+}
+
+/*Estilos para el formulario*/
+.formulario {
+  padding: 12px;
+}
+
+.formulario .miFormulario {
+  border: 3px solid rgb(251, 251, 251);
+  border-radius: 7px;
+  padding: 10px;
+  margin: auto;
+  width: 30%;
+}
+
+.formulario .miFormulario label {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 20px;
+  display: block;
+  width: 90%;
+}
+
+.formulario .miFormulario input[type="text"] {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 20px;
+  display: block;
+  width: 95%;
+}
+
+.formulario .miFormulario input[type="submit"] {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  padding: 5px 40px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/*Estilos para la tabla de listar*/
+.tabla {
+  border: 1px solid #fff;
+  padding: 12px;
+  width: 50%;
+  margin: auto;
+}
+
+.tabla .cabecera {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.tabla .cabecera th {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.tabla .cuerpo {
+  color: #fff;
+  font-weight: 600;
+}
+.tabla .cuerpo tr {
+  color: rgb(3, 1, 144);
+  background-color: #fff;
+}
+
+.tabla .cuerpo tr td {
+  padding: 15px;
+  color: rgb(3, 1, 144);
+  background-color: #fff;
+}
