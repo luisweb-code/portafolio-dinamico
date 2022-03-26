@@ -16,15 +16,17 @@ SELECT * FROM AGENDA;
 INSERT INTO AGENDA VALUES(NULL, 'Carlos', 'Olivera', '5598631248', 'carlos@carlos.com');
 INSERT INTO AGENDA VALUES(NULL, 'Pilar', 'Hernández', '5562147898', 'pilar@pilar.com');
 /*Eliminar los datos*/
-DELETE FROM AGENDA WHERE id_agenda = 2;
+DELETE FROM AGENDA WHERE correo = 'nat@nat.com';
 
 /*Editar los campos*/
-UPDATE AGENDA 
-SET nombre = 'Pilar',
-apellidos = 'Gracía',
-telefono = '5562147898',
-correo = 'pilar@pilar.com'
-WHERE id_agenda = 2;
+UPDATE AGENDA SET nombre = 'Pilar', apellidos = 'Gracía', telefono = '5562147898', correo = 'pilar@pilar.com' 
+WHERE correo = 'pilar@pilar.com';
+
+/*Quitar el modo seguro*/
+SET SQL_SAFE_UPDATES = 0;
+
+/*Buscar por correo*/
+SELECT * FROM AGENDA WHERE CORREO = 'carlos@carlos.com';
 
 
 

@@ -19,9 +19,9 @@
 
     <div class="mensaje">
         <?php if(!empty($mensaje)):?>
-            <p class="exito">Registro exitoso!</p>
+            <p class="exito" id="exito">Registro exitoso!</p>
         <?php else:?>
-            <p class="fracaso">Registro fallido</p>
+            <p class="fracaso" id="fracaso">Registro fallido</p>
         <?php endif?>
     </div>
 

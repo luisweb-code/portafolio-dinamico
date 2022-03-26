@@ -16,7 +16,6 @@
     <div class="contenedor">
         <nav class="menu">
             <a href="./view/agregar.php">Agregar</a>
-            <a href="#">Editar</a>
             <a href="./view/listar.php">Listar</a>
         </nav>
     </div>

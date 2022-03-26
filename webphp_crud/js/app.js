@@ -1,11 +1,14 @@
 //variables
-const $exito = document.querySelector('.exito');
-const $fracaso = document.querySelector('.fracaso');
+const $exito = !!document.getElementById("exito");
+const $fracaso = !!document.getElementById("fracaso");
 
-
-//Funciones
-
-setTimeout(()=>{
-    //$exito.style.display = "none";;
-    $fracaso.style.display = "none";;
-}, 4000);
+if ($exito) {
+  setTimeout(() => {
+    document.querySelector(".exito").style.display = "none";
+  }, 4000);
+}
+if ($fracaso) {
+  setTimeout(() => {
+    document.querySelector(".fracaso").style.display = "none";
+  }, 4000);
+}
